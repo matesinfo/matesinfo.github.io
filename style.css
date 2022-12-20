@@ -1,0 +1,89 @@
+body {
+    margin: 0 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(233, 233, 233);
+}
+
+.content {
+    height: 92vh;
+    width: 90vw;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images {
+    height: 100%;
+    width: calc(92vh * 4/3);
+    background: url("./assets/mosaic_d40-k40-c1000-16000x12000.jpg");
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.sliderContent {
+    width: 5vw;
+}
+
+.slider {
+    -webkit-appearance: none;
+    margin-left: 10%;
+    margin-top: calc(92vh - 45px);
+    width: 80%;
+    height: 15px;
+    border-radius: 5px;
+    background: white;
+    /* border: 1px solid #ee9f15; */
+    outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #ee9f15;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.sign {
+    height: 100%;
+    margin-left: 3vw;
+    width: 7vw;
+    color: white;
+    background: url("./assets/firma.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.title {
+    width: calc(90vw - 92vh * 4/3 - 10vw);
+    height: 92vh;
+    text-align: center;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 15vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Birthstone";
+}

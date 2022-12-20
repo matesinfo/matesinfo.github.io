@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&family=Birthstone&display=swap"
+        rel="stylesheet">
+    <link rel="preload" as="image" href="./assets/mosaic_d40-k40-c1000-16000x12000.jpg">
+    <link rel="preload" as="image" href="./assets/mosaic_d50-k40-c1000-16000x12000.jpg">
+    <link rel="preload" as="image" href="./assets/mosaic_d60-k40-c1000-16000x12000.jpg">
+    <link rel="preload" as="image" href="./assets/mosaic_d70-k40-c1000-16000x12000.jpg">
+    <link rel="preload" as="image" href="./assets/mosaic_d80-k40-c1000-16000x12000.jpg">
+    <link rel="preload" as="image" href="./assets/mosaic_d90-k40-c1000-16000x12000.jpg">
+    <link rel="preload" as="image" href="./assets/mosaic_d100-k40-c1000-16000x12000.jpg">
+    <link rel="preload" as="image" href="./assets/mosaic_d110-k40-c1000-16000x12000.jpg">
+    <link rel="preload" as="image" href="./assets/mosaic_d120-k40-c1000-16000x12000.jpg">
+    <link rel="preload" as="image" href="./assets/mosaic_d130-k40-c1000-16000x12000.jpg">
+    <link rel="preload" as="image" href="./assets/mosaic_d140-k40-c1000-16000x12000.jpg">
+    <link rel="preload" as="image" href="./assets/mosaic_d150-k40-c1000-16000x12000.jpg">
+    <title>MatesInfo</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="images" id="images">
+            <input type="range" id="slider" orient="vertical" class="slider" value="40" min="40" max="150" step="10" />
+        </div>
+        <div class="sign">
+
+        </div>
+        <div class="title">Mates Info</div>
+    </div>
+</body>
+<script>
+    var slider = document.getElementById("slider");
+
+    slider.oninput = function () {
+        // console.log("uwu");
+        document.getElementById("images").style.background = 'url("./assets/mosaic_d' + slider.value + '-k40-c1000-16000x12000.jpg")';
+    }
+</script>
+
+</html>
